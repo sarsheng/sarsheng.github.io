@@ -32,7 +32,7 @@ Body {
     }
 }
 
-#intro, #items, #cameras, #music, #research {
+#intro, #items, #cameras, #music, #research, #painting {
     p {
         font-family: 'Times New Roman', Times, serif;
     }
