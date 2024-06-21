@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+}
+
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("Media/header.jpeg");
+    background-blend-mode: multiply;
+    padding:20px;
+    font-size: 35px;
+}
+
+nav {
+    background-color:darkseagreen;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+Body {
+    text-align: center;
+    p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#intro, #items, #cameras, #music, #research {
+    p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+#footer {
+    a {
+        text-decoration: none; /* Remove underline from links */
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 20px;
+    a {
+        text-decoration: none;
+    } 
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 2px solid grey;
+}
+
+
