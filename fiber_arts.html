@@ -6,41 +6,148 @@
     <title>Sarah Sheng</title>
     <meta name="description" content="Our first page">
     <meta name="keywords" content="html tutorial template">
+    <link rel="stylesheet" href="app.css">
   </head>
 
   <body>
-    <div id="header">
-        <h1 style="text-align: center">Sarah Sheng</h1>
-        <h2 style="text-align: center">Welcome!</h2>
-  
-        <hr>
-  
-        <h4 style="text-align: center">some place to document my hobbies</h4>
-        <p style="text-align: center">just for fun :)</p>
-  
-        <hr>
+    <header class="main-header">
+        <h1 >Sarah Sheng</h1>
+    </header>
 
+    <hr>
+
+    <nav class="main-nav">
         <a href="./index.html">Home</a>
         <a href="./about_me.html">About Me</a>
         <a href="./fiber_arts.html">Fiber Arts</a>
         <a href="./photography.html">Photography</a>
         <a href="./music.html">Music</a>
-        <a href="./thrifting.html">Thrift Finds</a>
         <a href="./research.html">Research</a>
+    </nav>
+
+    <hr>
+
+    <div id="intro">
+      <p>These are some of the things that I've knit or crocheted!<br>
+      My etsy page is also linked down below, if interested.</p>
     </div>
 
-    <div id="knitting">
-      <h3>Knitting <3</h3>
-      <p>Some of the knitting pieces I've made recently</p>
+    <hr>
+
+    <div id="wip">
+        <h2>Work in Progress (WIP)</h2>
+        <p><strong>[Knit] </strong>Color Blocked Scarf</p>
+        <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/wip.jpeg" 
+            width="400"
+            height="400" 
+            alt="A picture of my WIP" />
     </div>
 
-    <div id="crochet">
-      <h3>Crochet <3</h3>
-      <p>Some of the crochet pieces I've made recently</p>
-      <a href="https://makeanddocrew.com/crochet-bucket-hat-free-pattern/"
-      target="_blank"> Link to Bucket Hat Pattern
-      </a>
+    <hr>
+
+    <h2>Completed Projects</h2>
+    <div class="container">
+        <div class="gallery" >
+          <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/scarf.jpeg" alt="Bucket Hat"
+            width="400"
+            height="400">
+            <div class="description">Scarf (2024)</div>
+          </a>
+        </div>
+        <div class="gallery" >
+          <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/granny_top.jpeg" alt="Bucket Hat"
+            width="400"
+            height="400">
+            <div class="description">Crop Top (2024)</div>
+          </a>
+        </div>
+
+        <div class="gallery" >
+          <a target="_blank" href="https://sarahbanera.etsy.com">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/bucket_hat.jpeg" alt="Bucket Hat"
+            width="400"
+            height="400">
+            <div class="description">Bucket Hat (2024)</div>
+        </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/bag.jpeg" alt="Bag"
+            width="400"
+            height="400"
+            </a>
+            <div class="description">Bag (2022)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/crop_top.jpg" alt="Crop Top"
+            width="400"
+            height="400"
+            </a>
+            <div class="description">Crop Top (2018)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/crochet_sweater.jpg" alt="Crochet Sweater"
+            width="400"
+            height="400"
+            </a>
+            <div class="description">Crochet Sweater (2018)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/knit_sweater.jpg" alt="Knit Sweater"
+            width="400"
+            height="400"
+            </a>
+            <div class="description">Knit Sweater (2017)</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+            <img src="/Users/sarahsheng/Desktop/Sarah's Website/media/fiber_arts/crochet_hat.jpg" alt="hat"
+            width="400"
+            height="400"
+            </a>
+            <div class="description">Hat (2015)</div>
+        </div>
     </div>
+
+    <hr>
+
+    <div id="footer">
+        <h2>Thanks for visiting!</h2>
+        <a href="https://www.instagram.com/sarahsheng_/"
+        target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.pinterest.com/sarahbaneraa/"
+        target="_blank">
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </a>
+        <a href="https://vsco.co/sarsheng"
+        target="_blank">
+          <ion-icon name="aperture-outline"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/-sarahsheng/"
+        target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://sarahbanera.etsy.com"
+        target="_blank">
+          <ion-icon name="storefront-outline"></ion-icon>
+        </a>
+      </div>
+  
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
   </body>
 
 </html>
