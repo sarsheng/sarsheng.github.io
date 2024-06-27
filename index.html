@@ -4,8 +4,6 @@
 
   <head>
     <title>Sarah Sheng</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
     <link rel="stylesheet" href="app.css">
   </head>
 
@@ -14,39 +12,95 @@
         <h1 >Sarah Sheng</h1>
     </header>
 
-    <hr>
-
     <nav class="main-nav">
         <a href="./index.html">Home</a>
         <a href="./fiber_arts.html">Fiber Arts</a>
         <a href="./visual_arts.html">Visual Arts</a>
         <a href="./music.html">Concerts</a>
-        <a href="./research.html">Research</a>
     </nav>
 
-    <hr>
-
-    <div id="introduction">
+    <div class="introduction">
       <h1 >Welcome!</h1>
-      <hr>
-      <img src="./media/intro.jpg"
-      width="400"
-      height="400" 
-      alt="A picture of me" />
+
+      <audio id="background-music">
+        <source src="Billie Eilish - LUNCH (Lyrics)-[AudioTrimmer.com].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <ion-icon name="musical-notes-outline"></ion-icon>
+      <h>Lunch - Billie Eilish</h>
+      <ion-icon name="musical-notes-outline"></ion-icon>
+
+      <br>
+
+      <button onclick="playMusic()">Play</button>
+      <button onclick="pauseMusic()">Pause</button>
+      <input type="range" id="progress-bar" min="0" max="100" value="0">
+
+<!-- TODO: Put this in a JS file once I learn JS -->
+      <script src="script.js"></script>
+      <script>
+        const audio = document.getElementById('background-music');
+        const progressBar = document.getElementById('progress-bar');
+
+        function playMusic() {
+        audio.play();
+        }
+
+        function pauseMusic() {
+        audio.pause();
+        }
+
+      // Update progress bar as the audio plays
+      audio.addEventListener('timeupdate', () => {
+            const percentage = (audio.currentTime / audio.duration) * 100;
+            progressBar.value = percentage;
+        });
+      // Seek audio when progress bar is changed
+      progressBar.addEventListener('input', () => {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+        });
+
+      window.addEventListener('load', () => {
+            audio.play();
+        });
+      </script>
+
+      <br>
+
+      
+
+      <div class="img-gallery">
+        <p> (iPhone slay) </p>
+        <img src="./selfies/0.jpeg"
+        width="200"/>
+        <img src="./selfies/1.jpeg"
+        width="200"/>
+        <img src="./selfies/2.jpeg"
+        width="200"/>
+        <img src="./selfies/3.jpeg"
+        width="200"/>
+        <img src="./selfies/4.jpeg"
+        width="200"/>
+        <img src="./selfies/5.jpeg"
+        width="200"/
+      </div>
       <h2>About Me</h2>
       <p>Hi, I'm Sarah! <br>
-        I like to pick up a lot of random hobbies so I thought it would be a good idea document them here. <br>
-        With a background in engineering, I thought it would be fun to code this website from scratch.<br>
-        I built my website using HTML and CSS for design and content, while managing it with Git for version control.<br>
-        I think it's a cool intersection between my work and my personal life. <br>
-        I hope you enjoy it!</p>
+        This a project that I've been working on where I am attempting to code a website from scratch.<br>
+        I'm building my website using HTML and CSS for design and content, while managing it with Git for version control.<br>
+        In the future, I will also be using this platform as a way to document other projects i've been working on.<br>
+        It's a cool intersection between my work and my personal hobbies! </p>
     </div>
 
     <hr>
 
-    <div id="interests">
-      <h2>Recent Fixation:</h2>
-      <p>coding this website!</p>
+    <div class="interests">
+      <h2>Recent Hobby Fixation:</h2>
+      <p>coding this website! <br>
+        currently learning HTML and CSS. <br>
+        maybe i'll get to JavaScript...</p>
     </div>
 
     <hr>
@@ -57,7 +111,7 @@
       target="_blank">
         <ion-icon name="logo-instagram"></ion-icon>
       </a>
-      <a href="https://www.pinterest.com/sarahbaneraa/"
+      <a href="./blank.html"
       target="_blank">
         <ion-icon name="logo-pinterest"></ion-icon>
       </a>
@@ -69,7 +123,7 @@
       target="_blank">
         <ion-icon name="logo-linkedin"></ion-icon>
       </a>
-      <a href="https://sarahbanera.etsy.com"
+      <a href="./blank.html"
       target="_blank">
         <ion-icon name="storefront-outline"></ion-icon>
       </a>
