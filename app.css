@@ -55,10 +55,10 @@ Body {
 
 .gallery {
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
 }
 
-.interests, .wip, .music {
+.interests, .wip {
     h2 {
         color:hotpink
     }
