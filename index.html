@@ -23,57 +23,9 @@
     <div class="introduction">
       <h1 >Welcome!</h1>
 
-      <audio id="background-music">
-        <source src="Billie Eilish - LUNCH (Lyrics)-[AudioTrimmer.com].mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-
-      <ion-icon name="musical-notes-outline"></ion-icon>
-      <h>Lunch - Billie Eilish</h>
-      <ion-icon name="musical-notes-outline"></ion-icon>
-
       <br>
-
-      <button onclick="playMusic()">Play</button>
-      <button onclick="pauseMusic()">Pause</button>
-      <input type="range" id="progress-bar" min="0" max="100" value="0">
-
-<!-- TODO: Put this in a JS file once I learn JS -->
-      <script src="script.js"></script>
-      <script>
-        const audio = document.getElementById('background-music');
-        const progressBar = document.getElementById('progress-bar');
-
-        function playMusic() {
-        audio.play();
-        }
-
-        function pauseMusic() {
-        audio.pause();
-        }
-
-      // Update progress bar as the audio plays
-      audio.addEventListener('timeupdate', () => {
-            const percentage = (audio.currentTime / audio.duration) * 100;
-            progressBar.value = percentage;
-        });
-      // Seek audio when progress bar is changed
-      progressBar.addEventListener('input', () => {
-            const seekTime = (progressBar.value / 100) * audio.duration;
-            audio.currentTime = seekTime;
-        });
-
-      window.addEventListener('load', () => {
-            audio.play();
-        });
-      </script>
-
-      <br>
-
-      
 
       <div class="img-gallery">
-        <p> (iPhone slay) </p>
         <img src="./selfies/0.jpeg"
         width="200"/>
         <img src="./selfies/1.jpeg"
@@ -101,7 +53,7 @@
       <h2>Recent Hobby Fixation:</h2>
       <p>coding this website! <br>
         currently learning HTML and CSS. <br>
-        maybe i'll get to JavaScript...</p>
+        maybe i'll get to JavaScript, maybe not...</p>
     </div>
 
     <hr>
